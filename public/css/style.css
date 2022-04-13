@@ -1,216 +1,129 @@
-body{    
-    font-family: 'Roboto';    
-}
+/* 
+Estilos generales
 
-header{
-    background-color: #EAC926;
-    margin: auto;
-    width: 100%;
-}
+-- Paleta de colores
+Amarillo:       #EAC926;
+Azul:           #03264C;
+Celeste:        #1259c3;
+Gris oscuro:    #666;
+Gris claro:     #ebebeb;
+Verde:          #39b54a;
 
-.liebre-logo{
-    margin-left: 30px;
-    margin-bottom: 10px;
-    width: 50%;
-}
+-- Tipografías
+Familia: 'Roboto'
 
-.nav {
-    margin-left: 30px;
-}
+-- Tamaños Tipográficos
+Cuerpos de texto:   12px
+Titulares:          24px (Basado en tu última visita/Ofertas)
+Precios:            18px
+Descuentos:         16px
+Descripciones:      16px
+*/
 
-.search-form{
-    margin-left: 30px;
-}
 
-.link-header:link{
-    text-decoration: none;    
-}
-.link-header:visited{
-    text-decoration: none;    
-}
-.link-header:hover{
-    text-decoration: underline;    
-}
-
-main{
-    background-color: #ebebeb;
+* {
     box-sizing: border-box;
-    margin: auto;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-right: 40px;
-    padding-left: 40px;
-    width: 90%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;;
 }
 
-article{
-    background-color:  white;
-    margin: 10px;
+.header__Bg-colog {
+    background-color: #EAC926;
+    margin-bottom: 20px;
+    padding: 20px;
 }
 
-p {    
+.titulares {
+    font-size: 24px;
+    color: #666;
+}
+
+.alineacion-footer {
     text-align: center;
-    font-size: 12px;
 }
 
-p.precios{
+.precios {
     font-size: 18px;
 }
 
-h2.titulares{
-    background-color: #ebebeb;    
-    font-size: 24px;
-    color:#666;
-    text-align: left;
-}
-p.descuentos{
+.descuentos {
     font-size: 16px;
-    color: green;
 }
 
-p.descripciones{
+.descripciones {
     font-size: 16px;
-    color: #666;
+    font-weight: bold;
 }
 
-.burger-menu{
+.align_burger-menu {
     text-align: center;
-    font-size: medium;
+    margin: 10px
 }
 
-.burger-menu > i{
-    border-radius: 10%;
-    background-color: #1259c3;
-    color:white;
-    margin-bottom: 20px;
-    margin-top: 10px;
-    padding: 10px;        
+.burger-menu {
+    border: solid 5px #03264C;
+    background-color: #03264C;
+    border-radius: 19%;
+    color: #FFFFFF;
+    font-size: 36px;
+    text-align: center;
+    padding: 5px;
+}
+.nav__display {
+    display: none;
 }
 
-.productos{    
+.footer__iconos {
+    display: flex;
+}
+
+.footer__iconos-style {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-}
-
-ul.lista-header{
-    list-style: none;
-    padding: 0px;
-
-}
-
-ul a{
-    color: black;
-}
-
-.header-banner{
-    width: 100%;
-}
-
-.fa-solid.fa-credit-card{
-    display: block;
-    color: #1259c3;
+    color: #03264C;
     font-size: 2em;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 10px;
-    margin-top: 50px;
-    text-align: center;
-    
+    margin: auto;
 }
 
-.fa-solid.fa-gift{
-    display: block;
-    color: #1259c3;
-    font-size: 2em;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 10px;  
-    margin-top: 50px;  
-    text-align: center;
-}
-
-.fa-solid.fa-user-shield{
-    display: block;
-    color: #1259c3;
-    font-size: 2em;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 10px;
-    margin-top: 50px;
-    text-align: center;    
-}
-
-h4.titulo-footer{
-    color: #666;
-    text-align: center;
-    margin-bottom:  0px;
-}
-
-p.texto-copyright{
-    color:#666;
-    font-size: 12px;
-    margin-top: 50px;
-    text-align: left;
-}
-
-p.texto-footer{
-    color: #666;
-    font-size: 12px;
-    margin-top: 0px;
-    padding-left: 100px;
-    padding-right: 100px;
-    text-align: center;
-}
-
-footer{
-    border:solid #ebebeb;
-    border-width: 5px;
-    width: 100%;
-}
-
-div.detalleproducto{
-    border-top: solid 1px #ebebeb;
-}
-
-.precios,
-.descuentos,
-.descripciones{
-    padding: 0px 15px 0px 15px;
-    text-align: left;
-}
-
-.fa-solid.fa-truck{
-    border: solid 1px green;
-    border-radius: 50%;
-    font-size: 1em;    
-    color: green;
-    margin-left: 15px;
-    margin-top: 10px;
-    padding: 10px;
-    text-align: center;
-}
-
-@media (min-width: 361px){
-    article{
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+@media (min-width: 400px) {
+    body {
+        background: green;
     }
-    .burger-menu{
+    .align_burger-menu {
         display: none;
     }
-
+    .nav__display {
+        display: block;
+    }
 }
 
-@media (min-width: 769px){
-    
-}
-
-@media (max-width: 360px){
-    .descripciones{
+@media (min-width: 769px) {
+    body {
+        background: red;
+    }
+    .align_burger-menu {
         display: none;
     }
-    .lista-header{
+    .nav__display {
+        display: block;
+    }
+}
+
+/* 
+@media (max-width: 460px) {
+    body {
+      background: green;
+    }
+    .nav__display {
         display: none;
     }
 }
+  
+  @media (min-width: 461px) and (max-width: 900px) {
+    body {
+      background: red;
+    }
+    .align_burger-menu {
+        display: none;
+    }
+} */
