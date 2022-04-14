@@ -47,57 +47,16 @@
 
     <!-- Aquí va el formulario de registro -->
     <main>
-        <h3>Regístrese</h3>
+        <h3>Login</h3>
         <form action="/home" method="post">
-            <p>
-                <label for="nombreApellido">Ingrese su nombre y apellido</label><br>
-                <input type="text" name="nombreApellido" placeholder="Nombre y Apellido">
-            </p>
             <p>
                 <label for="usuario">Ingrese su nombre de usuario</label><br>
                 <input type="text" name="usuario" placeholder="Nombre de usuario">
             </p>
-            <p>
-                <label for="email">Ingrese su e-mail</label><br>
-                <input type="email" name="email" placeholder="E-mail">
-            </p>
-            <p>
-                <label for="fechaNacimiento">Ingrese su fecha de nacimiento</label><br>
-                <input type="date" name="fechaNacimiento" placeholder="E-mail">
-            </p>
-            <p>
-                <label for="domicilio">Ingrese su domicilio</label><br>
-                <input type="text" name="domicilio" placeholder="Domicilio">
-            </p>
-            <p>
-                <label for="perfilUsuario">Ingrese perfil de usuario: comprador o vendedor <br>
-                    <input type="radio" name="perfilUsuario" value="comprador"> Comprador <br>        
-                    <input type="radio" name="perfilUsuario" value="vendedor"> Vendedor <br>        
-                </label>
-                
-            </p>
-            <p>
-                <label for="intereses">Ingrese sus intereses:<br>
-                    <input type="checkbox" name="intereses" value="electro"> Electro <br>        
-                    <input type="checkbox" name="intereses" value="moda"> Electro <br>        
-                    <input type="checkbox" name="intereses" value="hogar"> Hogar <br>        
-                    <input type="checkbox" name="intereses" value="jugueteria"> jugueteria <br>        
-                    <input type="checkbox" name="intereses" value="vidaSana"> vidaSana <br>        
-                    
-                </label>
-                
-            </p>
-            <p>
-                <label for="fotoPerfil">Seleccione una foto para el perfil</label><br>
-                <input type="file" name="fotoPerfil" accept=".jpg, .jpeg, .png">
-            </p>
+            
             <p>
                 <label for="password">Elija su su contraseña</label><br>
                 <input type="password" name="password" placeholder="Contraseña">
-            </p>
-            <p>
-                <label for="confirmarPassword">Confirme su su contraseña</label><br>
-                <input type="password" name="confirmarPassword" placeholder="Confirmar contraseña">
             </p>
             <p>
                 <button type="submit">Enviar</button> <button type="reset">Cancelar</button>
