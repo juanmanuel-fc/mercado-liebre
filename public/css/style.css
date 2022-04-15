@@ -145,6 +145,7 @@ main {
     display: flex;
     gap: 8px;
     margin: 12px 0px 12px 12px;
+    position: relative;
 }
 
 .main__articleTextoPrecio {
@@ -168,6 +169,19 @@ main {
     color: #666;
     margin: 12px 0 12px 12px;
 }
+
+.main__fa-truck {
+    font-size: 16px;
+    color: #39b54a;
+    border: 1px solid #39b54a;
+    padding: 6px;
+    border-radius: 50%;
+    position: absolute;
+    right: 5px;
+    bottom: 19px;
+}
+
+
 
 footer {
     background-color: #fff;
@@ -209,33 +223,6 @@ footer {
 }
 
 
-
-
-
-
-/* main section article i{
-    font-size: 16px;
-    padding: 5px;
-    width: 30px;
-    height: 30px;
-    border: 1px solid #39b54a;
-    background-color: #FFF;
-    border-radius: 50%;
-} */
-
-/* main section article i{
-    display: block;
-    font-size: 16px;
-    padding: 5px;
-    width: 30px;
-    height: 30px;
-    border: 1px solid #39b54a;
-    background-color: #FFF;
-    border-radius: 50%;
-    position: absolute;
-    right: 20px;
-    top: -15px;
-} */
 
 
 @media (min-width: 360px) {
