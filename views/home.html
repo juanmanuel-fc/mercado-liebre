@@ -5,53 +5,118 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <title>Bienvenidos a Mercado Liebre</title>
 
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="/css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;0,900;1,700&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/fe4ebeaca1.js" crossorigin="anonymous"></script>
+    
+    <script src="https://kit.fontawesome.com/be2f25d2d7.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    
-    <header class="header__Bg-color">
-        <!-- Div que contendrá el logo y el lugar para la barra de búsqueda -->
-        <div>
-            <img src="/images/logo-mercado-liebre.svg" alt="Logo Mercado Liebre">
-            <form action="">
-                <input type="text" placeholder="Buscar productos">
-            </form>
-        </div>
-        <div> <p><i class="fa-solid fa-hand-holding-dollar"></i> Comprá en cuotas y sin tarjeta de crédito</p> </div>
-        <nav class="nav__display" >
-            <ul>
-                <li> <a href="">Ofertas</a>  </li>
-                <li> <a href="">Tiendas Oficiales</a>  </li>
-                <li> <a href="">Vender</a>  </li>
-                <li> <a href="">Ayuda</a>  </li>
-            </ul>
-            <br>
-            <ul>
-                <li> <a href="/register">Creá tu cuenta</a> <i class="fa-solid fa-id-card"></i> </li>
-                <li> <a href="">Ingresá</a> <i class="fa-solid fa-right-to-bracket"></i> </li>
-                <li> <a href="">Mis compras</a> <i class="fa-solid fa-basket-shopping"></i> </li>
-            </ul>
-        </nav>
-        <div class="align_burger-menu">
-            <i class="fas fa-bars burger-menu"></i>
+
+    <header>
+        <!-- Div general para las 3 sections.
+        1ra sect. header superior con sus tres elementos: logo, barra búsqueda y texto
+        2da sect. barra de nav grande, se ve solo en pantallas grandes.
+        3er sect. hamb menu, solo se ve en las dos resoluciones chicas.
+        -->
+                
+        <div >
+            <!-- 1ra sect. logo, barra búsqueda y texto  -->
+            <section class="header__cajaSuperior" >
+                <div class="header__cajaSuperior__logo">
+                    <img src="/images/logo-mercado-liebre.svg" alt="Logo Mercado Liebre">
+                </div>
+                <div class="header__cajaSuperior__busqueda">
+                    <form action="/">
+                        <input type="text" placeholder="Buscar productos, marcas..." class="header__cajaSuperior__busqueda--input">
+                    </form>
+                </div>
+                <div class="header__cajaSuperior__texto">
+                    <p><i class="fa-solid fa-hand-holding-dollar"></i> Comprá en cuotas y sin tarjeta de crédito</p>
+                </div>
+            </section>
+            
+            <!-- 2da sect. barra de nav grande, se ve solo en pantallas grandes.  -->
+            <section class="header__barraNavGrande">
+                
+                <!-- parte barra nav izquierda -->
+                <div >
+                    <ul class="header__barraNavegacion">
+                        <li> <a href="#">Ofertas</a>  </li>
+                        <li> <a href="#">Tiendas Oficiales</a>  </li>
+                        <li> <a href="#">Vender</a>  </li>
+                        <li> <a href="#">Ayuda</a>  </li>
+                    </ul>
+                </div>
+                <!-- parte barra nav derecha -->
+                <div>
+                    <ul class="header__barraNavegacion">
+                        <li> <a href="/register">Creá tu cuenta <i class="fa-solid fa-id-card"></i></a></li>
+                        <li> <a href="#">Ingresá <i class="fa-solid fa-right-to-bracket"></i></a></li>
+                        <li> <a href="#">Mis compras <i class="fa-solid fa-basket-shopping"></i></a></li>
+                    </ul>
+                </div>
+                
+            </section>
+            
+            <!-- 3er sect. hamb menu, solo se ve en las dos resoluciones chicas. -->
+            <section class="header__hamburgerMenu">
+                <nav class="bigMacContainer">
+                    <i class="fas fa-bars bigMacContainer__BigMac" aria-hidden="true"></i>
+                </nav>
+            </section>
+
         </div>
     </header>
 
-    <main class="main__bg">
+          
+    <main>
+        <!-- Section para el banner -->
+        <section>
+            <div class="main__contenedorBanner">
+                <img src="/images/img-home-banner.jpg" alt="Banner MercadoLiebre">
+            </div>
+        </section>
         
         <!-- Sección basado en tu última visita -->
-        <section>
+        <section class="main__sectionUltimaVisita">
             <h3 class="titulares">Basado en tu última visita</h3>
             
-            <!-- inicio de section__article-a-flex -->
+            <article class="main__article">
+                <div>
+                    <img class="main__articleImg" src="/images/img-cafetera-moulinex.jpg" alt="Cafetera Moulinex">
+                </div>
 
+            </article>
+            
+            <article>
+                <div class="main__article">
+                    <img class="main__articleImg" src="/images/img-macbook-pro-2019.jpg" alt="MacBook Pro 2019">
+                </div>
+
+            </article>
+            
+            <article>
+                <div class="main__article">
+                    <img class="main__articleImg" src="/images/img-samsung-galaxy-s10.jpg" alt="Samsung Galaxy S10">
+                </div>
+
+            </article>
+            
+            <article>
+                <div class="main__article">
+                    <img class="main__articleImg" src="/images/img-tv-samsung-smart.jpg" alt="Samsung Smart TV 43'">
+                </div>
+
+            </article>
+       
+        </section>
+    
+        <!--             
             <div class="section__article-a-flex">
 
                 <article>
@@ -98,13 +163,17 @@
 
             
             
-        </section>
+        </section> -->
+        <!-- Fin section "basado en tu última visita" -->
         
         <!-- Sección Ofertas -->
+
+        <!--
+
         <section>
             <h3>Sección de Ofertas</h3>
 
-            <!-- inicio de section__article-a-flex -->
+            inicio de section__article-a-flex 
 
             <div class="section__article-a-flex">
 
@@ -146,6 +215,8 @@
             
     
         </section>
+
+        -->
 
     </main>
 

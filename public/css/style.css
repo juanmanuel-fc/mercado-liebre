@@ -28,15 +28,109 @@ Descripciones:      16px
     padding: 0;
 }
 
-.header__Bg-color {
+header {
     background-color: #EAC926;
-    /* margin-bottom: 20px; */
-    padding: 20px;
+    padding: 16px;
 }
 
-.main__bg {
-    background-color: #ebebeb;
+
+.header__cajaSuperior {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 12px;
 }
+
+.header__cajaSuperior__logo {
+    margin-left: auto;
+    margin-right: auto;    
+    width: 30%;
+}
+.header__cajaSuperior__busqueda {
+    margin-left: auto;
+    margin-right: auto;    
+    width: 30%;
+}
+.header__cajaSuperior__texto {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;    
+}
+
+.header__cajaSuperior__busqueda--input {
+    border: solid #ebebeb;
+    border-radius: 6px;
+    color: #000000;
+    font-family: inherit;
+    font-size: 1em;
+    
+    height: 2em;
+    padding-left: 15px;
+    width: 100%;
+}
+
+.header__barraNavGrande {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__barraNavegacion {
+    display: none;
+    list-style: none;
+    gap: 12px;
+}
+
+.header__hamburgerMenu {
+    display: flex;
+    justify-content: center;
+}
+
+.bigMacContainer {
+    background-color: #1259c3;
+    color: #ebebeb;
+    width: 36px;
+    height: 36px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.bigMacContainer__BigMac {
+    font-size: 24px;
+    padding: 6px;
+}
+
+main {
+    background-color: #ebebeb;
+    width: 100%;
+}
+
+.main__contenedorBanner {
+    width: 100%;
+}
+
+.main__contenedorBanner > img {
+    max-width: 100%;
+}
+
+.main__sectionUltimaVisita {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 36px;
+    gap: 12px;  
+}
+
+.main__article{
+    background-color: #ffffff;
+    padding: 6px;
+    border-radius: 8px;
+}
+
+.main__articleImg {
+    width: 100%;
+    border: #03264C;
+}
+
 
 .footer__bg {
     background-color: #ebebeb;
@@ -44,7 +138,9 @@ Descripciones:      16px
 
 .titulares {
     font-size: 24px;
+    font-weight: 600;
     color: #666;
+    margin: 12px 0 24px 12px;
 }
 
 .alineacion-footer {
@@ -76,23 +172,10 @@ Descripciones:      16px
     font-weight: bold;
 }
 
-.align_burger-menu {
-    text-align: center;
-    margin: 10px
-}
 
-.burger-menu {
-    border: solid 5px #03264C;
-    background-color: #03264C;
-    border-radius: 19%;
-    color: #FFFFFF;
-    font-size: 36px;
-    text-align: center;
-    padding: 5px;
-}
-.nav__display {
-    display: none;
-}
+
+
+
 
 .footer__iconos {
     display: flex;
@@ -139,41 +222,59 @@ Descripciones:      16px
     /* body {
         background: lightskyblue;
     } */
-    .align_burger-menu {
+    .header__barraNavegacion {
         display: none;
+        list-style: none;
+        gap: 12px;
+        
     }
+    
     .nav__display {
         display: block;
     }
+    .header__cajaSuperior {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+     
 }
 
 @media (min-width: 769px) {
     /* body {
         background: lightsalmon;
     } */
-    .align_burger-menu {
+    .header__barraNavegacion {
+        display: flex;
+        list-style: none;
+        gap: 12px;
+    }
+    /* Decoración links para las barras de nav del header */
+
+    .header__barraNavegacion > li > a, a:visited {
+        text-decoration: none;
+        color: #000000;
+    }
+    .header__barraNavegacion > li > a:hover {
+        text-decoration: underline;
+        color: #000000;
+        text-underline-offset: 5px;
+        
+    }
+
+    .header__hamburgerMenu {
         display: none;
     }
+
+
+
+    
     .nav__display {
         display: block;
     }
-}
-
-/* 
-@media (max-width: 460px) {
-    body {
-      background: green;
-    }
-    .nav__display {
-        display: none;
+    .header__cajaSuperior {
+        display: flex;
+        align-items: center;
+        flex-wrap: nowrap;
     }
 }
-  
-  @media (min-width: 461px) and (max-width: 900px) {
-    body {
-      background: red;
-    }
-    .align_burger-menu {
-        display: none;
-    }
-} */
