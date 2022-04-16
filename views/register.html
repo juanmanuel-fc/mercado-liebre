@@ -8,6 +8,7 @@
     <title>Bienvenidos a Mercado Liebre</title>
 
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/registro.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;0,900;1,700&display=swap" rel="stylesheet">
@@ -45,6 +46,7 @@
                 <!-- parte barra nav izquierda -->
                 <div >
                     <ul class="header__barraNavegacion">
+                        <li> <a href="/home">Home</a>  </li>
                         <li> <a href="#">Ofertas</a>  </li>
                         <li> <a href="#">Tiendas Oficiales</a>  </li>
                         <li> <a href="#">Vender</a>  </li>
@@ -55,7 +57,7 @@
                 <div>
                     <ul class="header__barraNavegacion">
                         <li> <a href="/register">Creá tu cuenta <i class="fa-solid fa-id-card"></i></a></li>
-                        <li> <a href="#">Ingresá <i class="fa-solid fa-right-to-bracket"></i></a></li>
+                        <li> <a href="/login">Ingresá <i class="fa-solid fa-right-to-bracket"></i></a></li>
                         <li> <a href="#">Mis compras <i class="fa-solid fa-basket-shopping"></i></a></li>
                     </ul>
                 </div>
@@ -75,61 +77,114 @@
           
     <!-- Aquí va el formulario de registro -->
     <main>
-        <h3>Regístrese</h3>
-        <form action="/home" method="post">
-            <p>
-                <label for="nombreApellido">Ingrese su nombre y apellido</label><br>
-                <input type="text" name="nombreApellido" placeholder="Nombre y Apellido">
-            </p>
-            <p>
-                <label for="usuario">Ingrese su nombre de usuario</label><br>
-                <input type="text" name="usuario" placeholder="Nombre de usuario">
-            </p>
-            <p>
-                <label for="email">Ingrese su e-mail</label><br>
-                <input type="email" name="email" placeholder="E-mail">
-            </p>
-            <p>
-                <label for="fechaNacimiento">Ingrese su fecha de nacimiento</label><br>
-                <input type="date" name="fechaNacimiento" placeholder="E-mail">
-            </p>
-            <p>
-                <label for="domicilio">Ingrese su domicilio</label><br>
-                <input type="text" name="domicilio" placeholder="Domicilio">
-            </p>
-            <p>
-                <label for="perfilUsuario">Ingrese perfil de usuario: comprador o vendedor <br>
-                    <input type="radio" name="perfilUsuario" value="comprador"> Comprador <br>        
-                    <input type="radio" name="perfilUsuario" value="vendedor"> Vendedor <br>        
-                </label>
-                
-            </p>
-            <p>
-                <label for="intereses">Ingrese sus intereses:<br>
+        <h3 class="titular__registrese">Regístrese.</h3>
+
+        <!-- Inicio de los elementos del form -->
+        <form action="/home" method="post" class="form__margenInferior">
+       
+            <div class="contenedorElementosForm" id="nombre">
+                <div class="contenedorLabel">
+                    <label for="nombreApellido" class="texto__general">Su nombre y apellido</label>
+                </div>
+                <div>
+                    <input class="texto__input" type="text" name="nombreApellido" placeholder="Nombre y apellido">
+                </div>
+            </div>
+            
+            <div class="contenedorElementosForm" id="usuario">
+                <div class="contenedorLabel">
+                    <label class="texto__general" for="usuario" >Su usuario</label>
+                </div>
+                <div>
+                    <input class="texto__input" type="text" name="usuario" placeholder="Nombre de usuario">
+                </div>
+            </div>
+            
+            <div class="contenedorElementosForm" id="email">
+                <div class="contenedorLabel">
+                    <label class="texto__general" for="email" >Su e-mail</label>
+                </div>
+                <div>
+                    <input class="texto__input" type="email" name="email" placeholder="@ email">
+                </div>
+            </div>
+            
+            <div class="contenedorElementosForm" id="fechaNacimiento">
+                <div class="contenedorLabel">
+                    <label class="texto__general" for="fechaNacimiento" >Su fecha de nacimiento</label>
+                </div>
+                <div>
+                    <input class="texto__input" type="date" name="fechaNacimiento">
+                </div>
+            </div>
+            
+            <div class="contenedorElementosForm" id="domicilio">
+                <div class="contenedorLabel">
+                    <label class="texto__general" for="domicilio" >Su domicilio</label>
+                </div>
+                <div>
+                    <input class="texto__input" type="text" name="domicilio" placeholder="Domicilio">
+                </div>
+            </div>
+            
+            <div class="contenedorElementosForm" id="perfilUsuario">
+                <div class="contenedorLabel">
+                    <label class="texto__general" for="perfilUsuario" >Su perfil de usuario: comprador o vendedor</label>
+                </div>
+                <div class="texto__radioYcheckbox">
+                    <input type="radio" name="perfilUsuario" value="comprador"> Comprador <br>          
+                    <input type="radio" name="perfilUsuario" value="vendedor"> Vendedor        
+                </div>
+            </div>
+            
+            <div class="contenedorElementosForm" id="intereses">
+                <div class="contenedorLabel">
+                    <label class="texto__general" for="intereses" >Sus intereses</label>
+                </div>
+                <div class="texto__radioYcheckbox">
                     <input type="checkbox" name="intereses" value="electro"> Electro <br>        
-                    <input type="checkbox" name="intereses" value="moda"> Electro <br>        
+                    <input type="checkbox" name="intereses" value="moda"> Moda <br>        
                     <input type="checkbox" name="intereses" value="hogar"> Hogar <br>        
-                    <input type="checkbox" name="intereses" value="jugueteria"> jugueteria <br>        
-                    <input type="checkbox" name="intereses" value="vidaSana"> vidaSana <br>        
-                    
-                </label>
-                
-            </p>
-            <p>
-                <label for="fotoPerfil">Seleccione una foto para el perfil</label><br>
-                <input type="file" name="fotoPerfil" accept=".jpg, .jpeg, .png">
-            </p>
-            <p>
-                <label for="password">Elija su su contraseña</label><br>
-                <input type="password" name="password" placeholder="Contraseña">
-            </p>
-            <p>
-                <label for="confirmarPassword">Confirme su su contraseña</label><br>
-                <input type="password" name="confirmarPassword" placeholder="Confirmar contraseña">
-            </p>
-            <p>
-                <button type="submit">Enviar</button> <button type="reset">Cancelar</button>
-            </p>
+                    <input type="checkbox" name="intereses" value="jugueteria"> Jugueteria <br>        
+                    <input type="checkbox" name="intereses" value="vidaSana"> Vida Sana <br>        
+                </div>
+            </div>
+            
+            <div class="contenedorElementosForm" id="fotoPerfil">
+                <div class="contenedorLabel">
+                    <label class="texto__general" for="fotoPerfil" >Suba su foto de perfil</label>
+                </div>
+                <div>
+                    <input type="file" name="fotoPerfil" accept=".jpg, .jpeg, .png">
+                </div>
+            </div>
+            
+            <div class="contenedorElementosForm" id="password">
+                <div class="contenedorLabel">
+                    <label class="texto__general" for="password" >Su contraseña</label>
+                </div>
+                <div>
+                    <input class="texto__input" type="password" name="password" placeholder="Contraseña">
+                </div>
+            </div>
+            
+            <div class="contenedorElementosForm" id="password2">
+                <div class="contenedorLabel">
+                    <label class="texto__general" for="password2" >Confirme su contraseña</label>
+                </div>
+                <div>
+                    <input class="texto__input" type="password" name="password2" placeholder="Confirme su contraseña">
+                </div>
+            </div>
+            
+            <div class="contenedorElementosForm">
+                <div class="contenedorLabel" >
+                    <label class="texto__general" ></label>
+                </div>
+                <div>
+                    <button class="form__button" type="submit">Enviar</button> <button class="form__button" type="reset">Borrar</button>
+                </div>
+            </div>
         </form>
     </main>
 
