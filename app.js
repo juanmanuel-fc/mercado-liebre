@@ -19,6 +19,10 @@ app.get("/home", (req, res) => {
     res.sendFile(path.resolve (__dirname, "./views/home.html"))
 });
 
+app.get("/home_prueba", (req, res) => {
+    res.sendFile(path.resolve (__dirname, "./views/home_prueba.html"))
+});
+
 app.post("/home", (req, res) => {
     res.sendFile(path.resolve (__dirname, "./views/home.html"))
 });

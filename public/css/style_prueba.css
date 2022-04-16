@@ -34,25 +34,21 @@ header {
 }
 
 
+.header__cajaSuperior__logo {
+    margin-right: auto;    
+    width: 45%;
+}
 .header__cajaSuperior {
     align-items: center;
     display: flex;
     flex-wrap: wrap;
     gap: 6px;
     margin-bottom: 12px;
-    justify-content: center;
 }
 
-.header__cajaSuperior__logo {
-    margin-right: auto;
-    width: 37%;
-}
 .header__cajaSuperior__busqueda {
-    width: 37%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 6px;
+    margin-left: auto;
+    width: 45%;
 }
 .header__cajaSuperior__texto {
     margin-left: auto;
@@ -65,8 +61,9 @@ header {
     border-radius: 6px;
     color: #000000;
     font-family: inherit;
-    font-size: 16px;
-    height: 32px;
+    font-size: 1em;
+    
+    height: 2em;
     padding-left: 15px;
     width: 100%;
 }
@@ -143,7 +140,7 @@ main {
 }
 
 .main__articleTextosDisplayFlex {
-    align-items: baseline;
+    align-items: center;
     display: flex;
     gap: 8px;
     margin: 12px 0px 12px 12px;
@@ -155,7 +152,7 @@ main {
 }
 
 .main__articleTextoDescuento {
-    font-size: 14px;
+    font-size: 16px;
     color: #39b54a;
 }
 
@@ -169,18 +166,18 @@ main {
     font-size: 22px;
     font-weight: 600;
     color: #666;
-    margin: 12px 0 6px 18px;
+    margin: 12px 0 12px 12px;
 }
 
 .main__fa-truck {
-    font-size: 12px;
+    font-size: 16px;
     color: #39b54a;
     border: 1px solid #39b54a;
     padding: 6px;
     border-radius: 50%;
     position: absolute;
     right: 5px;
-    bottom: 21px;
+    bottom: 19px;
 }
 
 
@@ -221,6 +218,7 @@ footer {
 .footer__textoFinal {
     color: #666;
     font-size: 14px;
+    margin-bottom: 24px;
 }
 
 @media (min-width: 360px) {
@@ -240,9 +238,9 @@ footer {
     .main__sectionUltimaVisita {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-evenly;
+        justify-content: center;
         padding: 8px;
-        gap: 9px;
+        gap: 12px;
     
     }
 
@@ -292,7 +290,7 @@ footer {
     .main__sectionUltimaVisita {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-evenly;
+        justify-content: center;
         padding: 8px;
         gap: 12px;
     
