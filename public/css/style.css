@@ -38,22 +38,30 @@ header {
     align-items: center;
     display: flex;
     flex-wrap: wrap;
-    gap: 6px;
-    margin-bottom: 12px;
+    gap: 12px;
     justify-content: center;
+    width: 100%;
+    margin-bottom: 15px;
 }
 
 .header__cajaSuperior__logo {
     margin-right: auto;
-    width: 37%;
+    width: 45%;
 }
+
+.header__ancho-logo {
+    max-width: 232px;
+}
+
 .header__cajaSuperior__busqueda {
-    width: 37%;
+    width: 45%;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 6px;
 }
+
+
 .header__cajaSuperior__texto {
     margin-left: auto;
     margin-right: auto;
@@ -64,12 +72,11 @@ header {
     border: solid 1px #999;
     border-radius: 6px;
     color: #000000;
-    font-family: inherit;
     font-size: 16px;
     height: 32px;
     padding-left: 6px;
-    width: 100%;
-}
+    width: 100%
+} 
 
 .header__barraNavGrande {
     display: flex;
@@ -257,6 +264,17 @@ footer {
 
 
 @media (min-width: 360px) {
+    
+    .header__cajaSuperior__logo {
+        width: 45%;
+    }
+
+    .header__cajaSuperior__busqueda {
+        width: 45%;
+    }
+    
+    
+    
     .header__barraNavegacion {
         display: none;
         list-style: none;
@@ -264,11 +282,7 @@ footer {
         
     }
 
-    .header__cajaSuperior {
-        display: flex;
-        align-items: center;
-        flex-wrap: wrap;
-    }
+    
 
     .main__sectionUltimaVisita {
         display: flex;
@@ -296,6 +310,36 @@ footer {
 
 
 @media (min-width: 769px) {
+
+    /* pruebas */
+
+    .header__cajaSuperior__logo {
+        width: 33%;
+    }
+
+    .header__cajaSuperior__busqueda {
+        width: 33%;
+        justify-content: flex-start;
+    }
+
+    .header__cajaSuperior__texto {
+        width: 33%;    
+    }
+
+    .header__cajaSuperior__busqueda--input {
+        border: solid 1px #999;
+        border-radius: 6px;
+        color: #000000;
+        font-size: 16px;
+        height: 32px;
+        padding-left: 6px;
+        width: 100%
+    }
+
+
+
+    /* pruebas */
+
      
    
     .header__barraNavegacion {
